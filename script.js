@@ -10,9 +10,6 @@ ducks.forEach(function (duck) {
         reset.classList.add('active');
         count += 1;
         score.textContent = count  ;
-        if (count % 4 == 0 ) {
-            duck.classList.remove('duckshot');
-        }
     });
     reset.addEventListener('click', function() {
     duck.classList.remove('duckshot'); 
