@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+    overflow: hidden;
+    background-image: url(forestbg.jpg);
+    background-size: cover;
+
+}
+
+#ducks {
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    transform: translate(0,-300px);
+}
+#duck:hover {
+    cursor:crosshair;
+}
+
+
+#duck {
+    width: 12%;    
+}
+#reset {
+    font-size: larger;
+    position: absolute;
+    left: -300px;
+    width: 150px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    
+}
+.active {
+    transform: translate(200%,0);
+    transition: 0.6s;
+}
+#reset:hover {
+    background-color: aqua;
+}
+#score {
+    font-size: xx-large;
+    transform: translate(0,100px);
+}
+.duckshot {
+    
+    transform: translate(0,900px) rotate(360deg);
+    transition: 1.5s;
+}
+.duckrespawn {
+    position:absolute;
+    top: 300px;
+    transition: 1s;
+}
+
+@media ( max-width: 1440px) {
+    #ducks {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            width: 300px;
+            height: 200px;
+            transform: translate(0, -200px);
+        }
+    #duck {
+            width: 150px;
+    }
+    
+} 
+
+
