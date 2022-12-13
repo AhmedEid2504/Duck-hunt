@@ -53,7 +53,7 @@ body {
 .duckshot {
     
     transform: translate(0,900px) rotate(360deg);
-    transition: 1.5s;
+    transition: 1s;
 }
 .duckrespawn {
     position:absolute;
@@ -64,16 +64,32 @@ body {
 @media ( max-width: 1440px) {
     #ducks {
             display: flex;
-            flex-wrap: wrap;
+            justify-content: space-between;
             flex-direction: row;
-            width: 300px;
-            height: 200px;
-            transform: translate(0, -200px);
+            width: 100%;
+            height: 100%;
+            transform: translate(0, -250px);
         }
     #duck {
-            width: 150px;
+            width: 170px;
     }
     
 } 
+
+@media (max-width: 500px) {
+#ducks {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 300px;
+        height: 200px;
+        transform: translate(0, -200px);
+    }
+
+    #duck {
+        width: 130px;
+    }
+}
+
 
 
